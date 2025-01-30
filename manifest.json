@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Skytup One",
+    "version": "1.0.1",
+    "description": "This is Skytup ground area",
+    "icons": {
+        "16": "favicon.png"
+    },
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
